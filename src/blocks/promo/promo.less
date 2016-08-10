@@ -1,0 +1,54 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/promo/promo.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.promo {
+  background-color: @gray-dark;
+  padding: 30px 0 20px;
+
+  @media (min-width: @screen-sm) {
+    padding: 50px 0 30px;
+  }
+
+  &__text {
+    color: #fff;
+    padding-top: 10px;
+
+    @media (min-width: @screen-sm) {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 490px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  &__list {
+    font-size: 22px;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 21px;
+    margin: 0 0 24px;
+    font-weight: 400;
+  }
+
+  &__subform {
+    color: @gray-light;
+    margin: 25px 0 0;
+  }
+}

@@ -1,0 +1,28 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/page-nav/page-nav.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.page-nav {
+  min-height: 85px;
+  background-color: #fff;
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar-nav {
+    text-transform: uppercase;
+    color: @text-color;
+    font-weight: 700;
+    padding-top: 18px;
+  }
+
+  .navbar-nav > li > a {
+    color: @text-color;
+  }
+
+  .contacts {
+    padding-top: 20px;
+  }
+}

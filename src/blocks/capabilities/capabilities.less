@@ -1,0 +1,49 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/capabilities/capabilities.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.capabilities {
+  padding: 25px 0 90px;
+
+  &__title {
+    .h1();
+    margin: 0 0 16px;
+  }
+
+  &__sub-title {
+    margin: 0 0 48px;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  &__list {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 60px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 75px;
+      background: linear-gradient(to top, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 100%);;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__msg {
+    font-size: 22px;
+    max-width: 615px;
+    margin: auto;
+
+    p {
+      margin-bottom: 26px;
+    }
+  }
+}

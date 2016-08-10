@@ -1,0 +1,67 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/tariff/tariff.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.tariff {
+  position: relative;
+  padding-top: 320px;
+
+  &__text {
+    min-height: 348px;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+
+    small {
+      display: block;
+      font-size: 1em;
+      color: inherit;
+    }
+  }
+
+  &__price {
+    margin-bottom: 25px;
+
+    .h3 {
+      font-size: 26px;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+
+  &__descr {
+    font-size: 16px;
+
+    p {
+      margin: 0 0 5px;
+    }
+  }
+
+  &__list {
+    padding-left: 1em;
+  }
+
+  &__actions {
+    text-align: center;
+  }
+
+
+
+  &--10 {
+    background: url(../img/dog.png) 50% 55px no-repeat;
+  }
+
+  &--20 {
+    background: url(../img/hourse.png) 50% 5px no-repeat;
+  }
+
+  &--30 {
+    background: url(../img/lion.png) 50% 70px no-repeat;
+  }
+}
