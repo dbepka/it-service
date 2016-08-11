@@ -32,7 +32,7 @@
           <li><a href="#reviews">Клиенты и отзывы</a></li>
           <li><a href="#tariffs">Тарифы</a></li>
         </ul>
-        <div class="navbar-right  hidden-sm">
+        <div class="navbar-right">
           <div class="contacts">
             <a class="contacts__phone  h4  text-nowrap" href="tel:+74956680428">+7 (495) 668-04-28</a>
             <div class="contacts__time">с 9:00 до 21:00 без выходных</div>
@@ -43,16 +43,19 @@
   </nav>
 
   <section class="promo">
+    <video class="promo__video" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+      <source src="img/final_1600.mp4"></source>
+    </video>
     <div class="container">
       <div class="row">
-        <div class="promo__text  col-xs-12  col-sm-7">
+        <div class="promo__text  col-xs-12  col-sm-6  col-md-7">
           <h1 class="promo__title">Абонентское компьютерное обслуживание бизнеса</h1>
           <ul class="promo__list">
-            <li>Приезд мастера в течение 40 минут</li>
+            <li>Приезд мастера через&nbsp;40&nbsp;минут</li>
             <li>Гарантия 3 месяца</li>
           </ul>
         </div>
-        <div class="col-xs-12  col-sm-5">
+        <div class="col-xs-12  col-sm-6  col-md-5  col-lg-4  hidden-xs">
           <form class="well  action-form">
             <h2 class="promo__subtitle"><strong>Заполните заявку сейчас</strong> и&nbsp;получите бесплатный аудит оборудования</h2>
             <div class="form-group">
@@ -61,10 +64,13 @@
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Введите телефон +7 (000) 000-00-00">
             </div>
-            <button type="submit" class="btn  btn-warning  btn-block  btn-lg">Отправить заявку</button>
+            <button type="submit" class="btn  btn-warning  btn-block">Отправить заявку</button>
             <p class="promo__subform  text-center">Наш директор свяжется с&nbsp;вами лично в&nbsp;течение <strong>5&nbsp;минут</strong></p>
           </form>
-          <p class="small  text-center">Мы работаем только в пределах Москвы</p>
+          <p class="promo__small  small  text-center">Мы работаем только в пределах Москвы</p>
+        </div>
+        <div class="col-xs-12  visible-xs-block">
+          <button type="submit" class="promo__btn-action  btn  btn-warning  btn-block">Заказать консультацию</button>
         </div>
       </div>
     </div>
@@ -72,33 +78,33 @@
 
   <section class="uptime" id="uptime">
     <div class="container">
-      <h1 class="uptime__title  h1  text-center">Организовываем бесперебойную работу офиса раз и&nbsp;навсегда!</h1>
+      <h1 class="uptime__title  h1  text-center">Организовываем бесперебойную работу офиса<br class="visible-lg-inline"> раз и&nbsp;навсегда!</h1>
       <div class="row">
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--like">
           <h2 class="uptime__subtitle">С нами надежно</h2>
-          <p>Благодаря проверенным, взрослым и надежным мастерам с <strong>опытом более 3 лет</strong>, компания за <strong>6 лет</strong> сформировала положительную репутацию на рынке Москвы</p>
+          <p>Благодаря проверенным, взрослым и&nbsp;надежным мастерам с&nbsp;<strong>опытом более 3&nbsp;лет</strong>, компания за&nbsp;<strong>6&nbsp;лет</strong> сформировала положительную репутацию на&nbsp;рынке Москвы</p>
         </div>
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--man">
           <h2 class="uptime__subtitle">Ваш личный супермастер</h2>
-          <p>Мы выделим для вас личного мастера, который, <strong>как семейный врач, знает</strong> о вашем оборудовании <strong>все</strong></p>
+          <p>Мы выделим для&nbsp;вас личного мастера, который, <strong>как семейный врач, знает</strong> о&nbsp;вашем оборудовании&nbsp;<strong>все</strong></p>
         </div>
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--eye">
           <h2 class="uptime__subtitle">Мы всегда начеку</h2>
-          <p>Мастер удаленно подключится в течение <strong>10 минут</strong> и устранит неисправность. Если проблему нельзя решить удаленно, мастер приедет к вам через <strong>40 минут</strong></p>
+          <p>Мастер удаленно подключится в&nbsp;течение <strong>10&nbsp;минут</strong> и&nbsp;устранит неисправность. Если проблему нельзя решить удаленно, мастер приедет к&nbsp;вам через <strong>40&nbsp;минут</strong></p>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--clock">
           <h2 class="uptime__subtitle">Помогать, а не мешать</h2>
-          <p>Выберите <strong>удобные дни и время</strong> приезда мастера и его работа станет практически незаметна для офиса</p>
+          <p>Выберите <strong>удобные дни и&nbsp;время</strong> приезда мастера и&nbsp;его&nbsp;работа станет практически незаметна для&nbsp;офиса</p>
         </div>
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--shield">
           <h2 class="uptime__subtitle">Гарантия 3 месяца</h2>
-          <p>В отличии от администратора-частника, мы даем <strong>гарантию на работы по договору</strong> и принимаем оплату <strong>по безналичному расчету с НДС</strong></p>
+          <p>В отличии от&nbsp;администратора-частника, мы&nbsp;даем <strong>гарантию на&nbsp;работы по&nbsp;договору</strong> и&nbsp;принимаем оплату <strong>по&nbsp;безналичному расчету с&nbsp;НДС</strong></p>
         </div>
-        <div class="col-xs-12  col-md-4  text-center  uptime__item">
+        <div class="col-xs-12  col-md-4  text-center  uptime__item  uptime__item--lock">
           <h2 class="uptime__subtitle">Мы держим секреты</h2>
-          <p>Наша компания подписывает с каждым клиентом <strong>договор о неразглашении</strong> и несет ответственность по законам РФ</p>
+          <p>Наша компания подписывает с&nbsp;каждым клиентом <strong>договор о&nbsp;неразглашении</strong> и&nbsp;несет ответственность по&nbsp;законам&nbsp;РФ</p>
         </div>
       </div>
     </div>
@@ -107,7 +113,7 @@
   <section class="capabilities">
     <div class="container">
       <h1 class="capabilities__title  text-center">Наши возможности почти безграничны</h1>
-      <h2 class="capabilities__sub-title  text-center">Более 200 услуг, входящих во все тарифные планы</h2>
+      <h2 class="capabilities__sub-title  text-center">Более 200 услуг, входящих во все тарифные планы:</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <ul class="capabilities__list">
@@ -134,12 +140,88 @@
       </div>
       <div class="capabilities__msg  text-center">
         <p>С нами ваша организация сможет расти и развиваться, а&nbsp;у&nbsp;вас будет полный контроль над действиями ваших&nbsp;сотрудников.</p>
-        <button class="btn btn-lg btn-warning">Заказать IT-обслуживание</button>
+        <button class="btn  btn-warning">Заказать IT-обслуживание</button>
       </div>
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section class="tariffs" id="tariffs">
+    <div class="container">
+      <h1 class="tariffs__title  h1  text-center">Мы с радостью поработаем и с вами!</h1>
+      <h2 class="tariffs__sub-title  text-center">Выберите тарифный план, подходящий именно вам</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <section class="tariff  tariff--10">
+            <div class="tariff__text">
+              <h2 class="tariff__title">Офис <small>до 10 человек</small></h2>
+              <div class="tariff__price  text-warning">
+                <div class="h3">19 000 руб</div>
+                <small>ежемесячная оплата с учетом НДС *</small>
+              </div>
+              <div class="tariff__descr">
+                <p>Тариф для небольших компаний:</p>
+                <ul class="tariff__list">
+                  <li>10 компьютеров</li>
+                  <li>1 сервер</li>
+                  <li>2 принтера</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tariff__actions">
+              <button class="btn btn-warning ">Получить консультацию</button>
+            </div>
+          </section>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <section class="tariff  tariff--20">
+            <div class="tariff__text">
+              <h2 class="tariff__title">Компания <small>до 20 человек</small></h2>
+              <div class="tariff__price  text-success">
+                <div class="h3">27 000 руб.</div>
+                <small>ежемесячная оплата с учетом НДС *</small>
+              </div>
+              <div class="tariff__descr">
+                <p>Для средних компаний с небольшим количеством оборудования:</p>
+                <ul class="tariff__list">
+                  <li>20 компьютеров</li>
+                  <li>2 сервера</li>
+                  <li>4 принтера</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tariff__actions">
+              <button class="btn btn-success ">Получить консультацию</button>
+            </div>
+          </section>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <section class="tariff  tariff--30">
+            <div class="tariff__text">
+              <h2 class="tariff__title">Бизнес <small>от 30 человек и более</small></h2>
+              <div class="tariff__price  text-primary">
+                <div class="h3">33 000 руб.</div>
+                <small>ежемесячная оплата с учетом НДС *</small>
+              </div>
+              <div class="tariff__descr">
+                <p>Тариф для крупных компаний:</p>
+                <ul class="tariff__list">
+                  <li>от 30 компьютеров</li>
+                  <li>от 4 серверов</li>
+                  <li>от 4 принтеров</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tariff__actions">
+              <button class="btn btn-primary ">Получить консультацию</button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="small  text-muted  tariffs__msg">*  Точную стоимость тарифа можно узнать запросив консультацию</p>
+    </div>
+  </section>
+
+<!--   <section class="services" id="services">
     <div class="container">
       <h1 class="services__title  h1  text-center">Мы гордимся достижениями</h1>
       <h2 class="services__sub-title  text-center">Подтверждаем уровень профессионализма сертификатами от&nbsp;фсб, увд, Microsoft</h2>
@@ -170,7 +252,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="reviews" id="reviews">
     <div class="container">
@@ -223,97 +305,21 @@
       </div>
       <div class="reviews__partners">
         <h2 class="reviews__partners-title">Ценим крепкие долгосрочные отношения:</h2>
-        <p>картинка с логгтипами</p>
+        <p class="text-center"><img src="img/logotypes.png" height="247" width="768" alt=""></p>
       </div>
-    </div>
-  </section>
-
-  <section class="tariffs" id="tariffs">
-    <div class="container">
-      <h1 class="tariffs__title  h1  text-center">Мы с радостью поработаем и с вами!</h1>
-      <h2 class="tariffs__sub-title  text-center">Выберите тарифный план, подходящий именно вам</h2>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <section class="tariff  tariff--10">
-            <div class="tariff__text">
-              <h2 class="tariff__title">Офис <small>до 10 человек</small></h2>
-              <div class="tariff__price  text-warning">
-                <div class="h3">19 000 руб</div>
-                <small>ежемесячная оплата с учетом НДС *</small>
-              </div>
-              <div class="tariff__descr">
-                <p>Тариф для небольших компаний:</p>
-                <ul class="tariff__list">
-                  <li>10 компьютеров</li>
-                  <li>1 сервер</li>
-                  <li>2 принтера</li>
-                </ul>
-              </div>
-            </div>
-            <div class="tariff__actions">
-              <button class="btn btn-warning  btn-lg">Получить консультацию</button>
-            </div>
-          </section>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <section class="tariff  tariff--20">
-            <div class="tariff__text">
-              <h2 class="tariff__title">Компания <small>до 20 человек</small></h2>
-              <div class="tariff__price  text-success">
-                <div class="h3">27 000 руб.</div>
-                <small>ежемесячная оплата с учетом НДС *</small>
-              </div>
-              <div class="tariff__descr">
-                <p>Для средних компаний с небольшим количеством оборудования:</p>
-                <ul class="tariff__list">
-                  <li>20 компьютеров</li>
-                  <li>2 сервера</li>
-                  <li>4 принтера</li>
-                </ul>
-              </div>
-            </div>
-            <div class="tariff__actions">
-              <button class="btn btn-success  btn-lg">Получить консультацию</button>
-            </div>
-          </section>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <section class="tariff  tariff--30">
-            <div class="tariff__text">
-              <h2 class="tariff__title">Бизнес <small>от 30 человек и более</small></h2>
-              <div class="tariff__price  text-primary">
-                <div class="h3">33 000 руб.</div>
-                <small>ежемесячная оплата с учетом НДС *</small>
-              </div>
-              <div class="tariff__descr">
-                <p>Тариф для крупных компаний:</p>
-                <ul class="tariff__list">
-                  <li>от 30 компьютеров</li>
-                  <li>от 4 серверов</li>
-                  <li>от 4 принтеров</li>
-                </ul>
-              </div>
-            </div>
-            <div class="tariff__actions">
-              <button class="btn btn-primary  btn-lg">Получить консультацию</button>
-            </div>
-          </section>
-        </div>
-      </div>
-      <p class="small  text-center  text-muted  tariffs__msg">*  Точную стоимость тарифа можно узнать запросив консультацию</p>
     </div>
   </section>
 
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12">
           <a class="logo" href="#">Логотип
             <div class="small">Компьютерное абонентское обслуживание бизнеса</div>
           </a>
-          <p class="page-footer__copyright">© 2016, SITLAN</p>TLAN</li>
+          <p class="page-footer__copyright">© 2016, SITLAN</p>
         </div>
-        <div class="col-xs-12 col-sm-3">
+        <!-- <div class="col-xs-12 col-sm-3">
           <div class="contacts">
             <a class="contacts__phone  h4  text-nowrap" href="tel:+74956680428">+7 (495) 668-04-28</a>
             <div class="contacts__time">с 9:00 до 21:00 без выходных</div>
@@ -332,7 +338,7 @@
             </div>
             <button type="submit" class="btn  btn-warning  btn-block">Отправить заявку</button>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>

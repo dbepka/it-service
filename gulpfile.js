@@ -102,6 +102,13 @@ gulp.task('img', function () {
     .pipe(gulp.dest(dirs.build + '/img'));
 });
 
+
+gulp.task('video', function () {
+  console.log('---------- Копирование видео');
+  return gulp.src('./src/img/*.mp4')
+    .pipe(gulp.dest(dirs.build + '/img'));
+});
+
 // Оптимизация изображений // folder=src/img/icons/ npm start img:opt
 const folder = process.env.folder;
 gulp.task('img:opt', function (callback) {
@@ -225,7 +232,7 @@ gulp.task('clean', function () {
 gulp.task('build', gulp.series(
   'clean',
   'svgstore',
-  gulp.parallel('less', 'img', 'js', 'js:copy'),
+  gulp.parallel('less', 'img', 'video', 'js', 'js:copy'),
   'html'
 ));
 

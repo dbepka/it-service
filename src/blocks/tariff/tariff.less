@@ -5,15 +5,26 @@
 
 .tariff {
   position: relative;
-  padding-top: 320px;
+  // padding-top: 250px; // 320
+  margin-top: 20px;
+  margin-bottom: 55px;
+  // background-color: @gray-lighter;
 
   &__text {
-    min-height: 348px;
     padding-bottom: 10px;
+    padding-left: 15px;
+
+    @media (min-width: @screen-sm) {
+      padding-left: 0;
+    }
+
+    @media (min-width: @screen-sm) {
+      min-height: 348px;
+    }
   }
 
   &__title {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
     font-size: 26px;
     line-height: 30px;
     font-weight: 400;
@@ -26,7 +37,7 @@
   }
 
   &__price {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     .h3 {
       font-size: 26px;
@@ -48,20 +59,128 @@
   }
 
   &__actions {
-    text-align: center;
+    padding-left: 15px;
+
+    @media (min-width: @screen-sm) {
+      padding-left: 0;
+    }
+
+    .btn {
+      width: 250px;
+
+      @media (min-width: @screen-sm) {
+        width: 220px;
+      }
+
+      @media (min-width: @screen-md) {
+        width: 250px;
+      }
+    }
   }
 
 
 
   &--10 {
-    background: url(../img/dog.png) 50% 55px no-repeat;
+    padding-top: 250px;
+    background: url(../img/dog.png) 50% 5px no-repeat; // 55
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      left: -15px;
+      right: -15px;
+      height: 193px;
+      background-color: @gray-lighter;
+      border-bottom: 1px solid #ddd;
+
+      @media (min-width: @screen-sm) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @screen-sm) {
+      padding-top: 250px;
+      background-position: 50% 43px;
+      background-size: 125px auto;
+    }
+
+    @media (min-width: @screen-md) {
+      background-size: auto !important;
+      padding-top: 320px !important;
+      margin-top: 0 !important;
+    }
   }
 
   &--20 {
-    background: url(../img/hourse.png) 50% 5px no-repeat;
+    padding-top: 320px;
+    background: url(../img/hourse.png) 50% 5px no-repeat; // 5
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20px;
+      left: -15px;
+      right: -15px;
+      height: 261px;
+      background-color: @gray-lighter;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+
+      @media (min-width: @screen-sm) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @screen-sm) {
+      padding-top: 250px;
+      background-size: 190px auto;
+      background-position: 50% 10px;
+    }
+
+    @media (min-width: @screen-md) {
+      background-size: auto !important;
+      background-position: 50% 0 !important;
+      margin-top: 0 !important;
+      padding-top: 320px !important;
+    }
   }
 
   &--30 {
-    background: url(../img/lion.png) 50% 70px no-repeat;
+    padding-top: 240px;
+    background: url(../img/lion.png) 50% 30px no-repeat; // 70
+    background-size: 290px auto;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20px;
+      left: -15px;
+      right: -15px;
+      height: 204px;
+      background-color: @gray-lighter;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+
+      @media (min-width: @screen-sm) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @screen-sm) {
+      padding-top: 250px;
+      background-position: 50% 76px;
+      background-size: 220px auto;
+    }
+
+    @media (min-width: @screen-md) {
+      background-size: 293px auto !important;
+      background-position: 50% 61px !important;
+      margin-top: 0 !important;
+      padding-top: 320px !important;
+    }
   }
 }

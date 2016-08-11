@@ -4,7 +4,7 @@
 
 
 .reviews {
-  padding: 95px 0 128px;
+  padding: 0 0 128px; // 95
 
   &__title {
     .h1();
@@ -23,10 +23,50 @@
   &__gallery {
     position: relative;
 
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      width: 60px;
+      display: none;
+
+      @media (min-width: @screen-sm) {
+        display: block;
+      }
+
+      @media (min-width: @screen-md) {
+        width: 90px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      right: -1px;
+      background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      width: 60px;
+      display: none;
+
+      @media (min-width: @screen-sm) {
+        display: block;
+      }
+
+      @media (min-width: @screen-md) {
+        width: 90px;
+      }
+    }
+
     .owl-nav {
       display: none;
 
-      @media (min-width: @screen-md) {
+      @media (min-width: @screen-sm) {
         display: block;
       }
 
@@ -35,15 +75,19 @@
         color: transparent;
         position: absolute;
         top: 50%;
-        left: -40px;
-        width: 35px;
-        height: 35px;
-        transform: translateY(-50%) rotate(135deg);
-        border-right: 4px solid @text-color;
-        border-bottom: 4px solid @text-color;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%) translateX(-198px) rotate(135deg);
+        border-right: 3px solid @gray-light;
+        border-bottom: 3px solid @gray-light;
+
+        @media (min-width: @screen-md) {
+          transform: translateY(-50%) translateX(-255px) rotate(135deg);
+        }
 
         @media (min-width: @screen-lg) {
-          left: -60px;
+          transform: translateY(-50%) translateX(-303px) rotate(135deg);
         }
       }
 
@@ -52,17 +96,30 @@
         color: transparent;
         position: absolute;
         top: 50%;
-        right: -40px;
-        width: 35px;
-        height: 35px;
-        transform: translateY(-50%) rotate(-45deg);
-        border-right: 4px solid @text-color;
-        border-bottom: 4px solid @text-color;
+        right: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%) translateX(198px) rotate(-45deg);
+        border-right: 3px solid @gray-light;
+        border-bottom: 3px solid @gray-light;
+
+        @media (min-width: @screen-md) {
+          transform: translateY(-50%) translateX(255px) rotate(-45deg);
+        }
 
         @media (min-width: @screen-lg) {
-          right: -60px;
+          transform: translateY(-50%) translateX(303px) rotate(-45deg);
         }
       }
+    }
+  }
+
+  &__partners {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

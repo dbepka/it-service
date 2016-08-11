@@ -4,19 +4,60 @@
 
 
 .uptime {
-  padding: 65px 30px;
+  padding: 65px 0 40px;
+
+  @media (min-width: @screen-md) {
+    padding-bottom: 65px;
+  }
 
   &__title {
     .h1();
-    margin: 0 0 84px;
+    margin: 0 0 50px;
+    font-weight: 700;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 62px;
+    }
   }
 
   &__item {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 40px;
+
+    @media (min-width: @screen-md) {
+      padding-top: 90px;
+    }
 
     p {
       font-size: 15px;
+    }
+
+    &--clock {
+      background: url(../img/clock.svg) 50% 5px no-repeat;
+    }
+
+    &--eye {
+      background: url(../img/eye.svg) 50% 15px no-repeat;
+
+      @media (min-width: @screen-md) {
+        background: url(../img/eye.svg) 50% 10px no-repeat;
+      }
+    }
+
+    &--like {
+      background: url(../img/like.svg) 50% 0 no-repeat;
+    }
+
+    &--lock {
+      background: url(../img/lock.svg) 50% 0 no-repeat;
+    }
+
+    &--man {
+      background: url(../img/men.svg) 50% 0 no-repeat;
+    }
+
+    &--shield {
+      background: url(../img/shield.svg) 50% 0 no-repeat;
     }
   }
 
