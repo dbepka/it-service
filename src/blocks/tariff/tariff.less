@@ -5,10 +5,8 @@
 
 .tariff {
   position: relative;
-  // padding-top: 250px; // 320
   margin-top: 20px;
   margin-bottom: 55px;
-  // background-color: @gray-lighter;
 
   &__text {
     padding-bottom: 10px;
@@ -82,7 +80,6 @@
 
   &--10 {
     padding-top: 250px;
-    background: url(../img/dog.png) 50% 5px no-repeat; // 55
 
     &:before {
       content: '';
@@ -100,22 +97,42 @@
       }
     }
 
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 250px;
+      background: url(../img/dog.png) 50% 5px no-repeat;
+
+      @media (min-width: @screen-sm) {
+        background-position: 50% 43px;
+        background-size: 125px auto;
+      }
+
+      @media (min-width: @screen-md) {
+        background-size: auto !important;
+        height: 320px !important;
+        background-position: 50% 5px !important;
+      }
+    }
+
     @media (min-width: @screen-sm) {
       padding-top: 250px;
-      background-position: 50% 43px;
-      background-size: 125px auto;
     }
 
     @media (min-width: @screen-md) {
-      background-size: auto !important;
       padding-top: 320px !important;
       margin-top: 0 !important;
     }
   }
 
+
+
   &--20 {
     padding-top: 320px;
-    background: url(../img/hourse.png) 50% 5px no-repeat; // 5
 
     &:before {
       content: '';
@@ -134,10 +151,31 @@
       }
     }
 
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 320px;
+      background: url(../img/hourse.png) 50% 5px no-repeat;
+
+      @media (min-width: @screen-sm) {
+        background-size: 190px auto;
+        background-position: 50% 10px;
+        height: 250px;
+      }
+
+      @media (min-width: @screen-md) {
+        background-size: auto !important;
+        background-position: 50% 0 !important;
+        height: 320px !important;
+      }
+    }
+
     @media (min-width: @screen-sm) {
       padding-top: 250px;
-      background-size: 190px auto;
-      background-position: 50% 10px;
     }
 
     @media (min-width: @screen-md) {
@@ -148,10 +186,10 @@
     }
   }
 
+
+
   &--30 {
     padding-top: 240px;
-    background: url(../img/lion.png) 50% 30px no-repeat; // 70
-    background-size: 290px auto;
 
     &:before {
       content: '';
@@ -170,15 +208,36 @@
       }
     }
 
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 240px;
+      background: url(../img/lion.png) 50% 30px no-repeat; // 70
+      background-size: 290px auto;
+
+      @media (min-width: @screen-sm) {
+        background-position: 50% 76px;
+        background-size: 220px auto;
+        height: 250px;
+      }
+
+      @media (min-width: @screen-md) {
+        left: -20px !important;
+        background-size: 313px auto !important;
+        background-position: 50% 29px !important;
+        height: 320px !important;
+      }
+    }
+
     @media (min-width: @screen-sm) {
       padding-top: 250px;
-      background-position: 50% 76px;
-      background-size: 220px auto;
     }
 
     @media (min-width: @screen-md) {
-      background-size: 293px auto !important;
-      background-position: 50% 61px !important;
       margin-top: 0 !important;
       padding-top: 320px !important;
     }

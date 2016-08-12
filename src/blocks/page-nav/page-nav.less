@@ -9,6 +9,10 @@
   border: 0 !important;
   box-shadow: 0 2px 5px rgba(0,0,0,0.20);
 
+  @media (min-width: @screen-xs) {
+    min-height: 58px;
+  }
+
   .navbar-brand {
     height: auto;
   }
@@ -26,5 +30,24 @@
 
   .contacts {
     padding-top: 20px;
+
+    @media (min-width: @screen-sm) {
+      padding-top: 6px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @screen-md) {
+      padding-top: 20px !important;
+    }
+  }
+
+  .navbar-nav {
+
+    @media (min-width: @screen-sm) {
+      display: none;
+    }
+    @media (min-width: @screen-md) {
+      display: block !important;
+    }
   }
 }
