@@ -11,6 +11,12 @@
   &__text {
     padding-bottom: 10px;
     padding-left: 15px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: @screen-xs) {
+      padding-left: 80px;
+    }
 
     @media (min-width: @screen-sm) {
       padding-left: 0;
@@ -58,6 +64,10 @@
 
   &__actions {
     padding-left: 15px;
+
+    @media (min-width: @screen-xs) {
+      padding-left: 80px;
+    }
 
     @media (min-width: @screen-sm) {
       padding-left: 0;
@@ -115,7 +125,7 @@
       @media (min-width: @screen-md) {
         background-size: auto !important;
         height: 320px !important;
-        background-position: 50% 5px !important;
+        background-position: 50% 58px !important;
       }
     }
 
@@ -170,7 +180,8 @@
       @media (min-width: @screen-md) {
         background-size: auto !important;
         background-position: 50% 0 !important;
-        height: 320px !important;
+        height: 331px !important;
+        top: 20px;
       }
     }
 
@@ -226,9 +237,10 @@
       }
 
       @media (min-width: @screen-md) {
-        left: -20px !important;
-        background-size: 313px auto !important;
-        background-position: 50% 29px !important;
+        left: -35px !important;
+        right: -20px !important;
+        background-size: 349px auto !important;
+        background-position: 50% 73px !important;
         height: 320px !important;
       }
     }
