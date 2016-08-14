@@ -29,9 +29,9 @@
           <div class="logo__descr  small">Абонентское компьютерное обслуживание бизнеса</div>
         </a>
       </div>
-      <ul class="nav  navbar-nav">
+      <ul class="nav  navbar-nav" id="nav">
         <li><a href="#uptime">Наши плюсы</a></li>
-        <li><a href="#services">Услуги</a></li>
+        <li><a href="#capabilities">Услуги</a></li>
         <li><a href="#tariffs">Тарифы</a></li>
         <li><a href="#reviews">Клиенты и отзывы</a></li>
       </ul>
@@ -61,15 +61,15 @@
               <input type="text" class="form-control" placeholder="Введите имя">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Введите телефон">
+              <input type="tel" class="form-control" placeholder="Введите телефон">
             </div>
             <button type="submit" class="btn  btn-danger  btn-block">Отправить заявку</button>
-            <p class="promo__subform  text-center">Наш директор свяжется с&nbsp;вами лично в&nbsp;течение <strong>5&nbsp;минут</strong></p>
+            <p class="promo__subform  text-center">Наш директор свяжется с&nbsp;вами лично <strong>через&nbsp;5&nbsp;минут</strong></p>
           </form>
           <p class="promo__small  small  text-center">* &nbsp;Мы работаем только в пределах Москвы</p>
         </div>
         <div class="col-xs-12  visible-xs-block">
-          <button type="submit" class="promo__btn-action  btn  btn-warning  btn-block">Заказать консультацию</button>
+          <button type="submit" class="promo__btn-action  btn  btn-danger  btn-block" data-toggle="modal" data-target="#form-modal">Заказать IT-обслуживание</button>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
 
   <section class="uptime" id="uptime">
     <div class="container">
-      <h1 class="uptime__title  h1  text-center">Организовываем бесперебойную работу офиса<br class="visible-lg-inline"> раз и&nbsp;навсегда!</h1>
+      <h1 class="uptime__title  h1  text-center">Организовываем бесперебойную работу офиса<br class="visible-sm-inline  visible-md-inline  visible-lg-inline"> раз и&nbsp;навсегда!</h1>
       <div class="row">
         <div class="col-md-4  text-center  uptime__item  uptime__item--like">
           <h2 class="uptime__subtitle">С нами надежно</h2>
@@ -109,7 +109,7 @@
     </div>
   </section>
 
-  <section class="capabilities">
+  <section class="capabilities" id="capabilities">
     <div class="container">
       <h1 class="capabilities__title  text-center">Наши возможности почти безграничны</h1>
       <h2 class="capabilities__sub-title  text-center">Более 200 услуг, входящих во все тарифные планы:</h2>
@@ -138,16 +138,16 @@
         </div>
       </div>
       <div class="capabilities__msg  text-center">
-        <p>С нами ваша организация сможет расти и развиваться, а&nbsp;у&nbsp;вас будет полный контроль над действиями ваших&nbsp;сотрудников.</p>
-        <button class="btn  btn-danger">Заказать IT-обслуживание</button>
+        <p>С нами ваша организация сможет расти и развиваться, а&nbsp;у&nbsp;вас будет полный контроль над действиями ваших&nbsp;сотрудников</p>
+        <button class="btn  btn-danger" data-toggle="modal" data-target="#form-modal">Заказать IT-обслуживание</button>
       </div>
     </div>
   </section>
 
   <section class="tariffs" id="tariffs">
     <div class="container">
-      <h1 class="tariffs__title  h1  text-center">Мы с радостью поработаем с вами!</h1>
-      <h2 class="tariffs__sub-title  text-center">Выберите тарифный план, подходящий именно вам</h2>
+      <h1 class="tariffs__title  h1  text-center">Мы с радостью поработаем с&nbsp;вами!</h1>
+      <h2 class="tariffs__sub-title  text-center">Выберите тарифный план, подходящий именно&nbsp;вам</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <section class="tariff  tariff--10">
@@ -168,7 +168,7 @@
               </div>
             </div>
             <div class="tariff__actions">
-              <button class="btn btn-default ">Получить консультацию</button>
+              <button class="btn btn-default" data-toggle="modal" data-target="#form-modal">Получить консультацию</button>
             </div>
           </section>
         </div>
@@ -191,7 +191,7 @@
               </div>
             </div>
             <div class="tariff__actions">
-              <button class="btn btn-default ">Получить консультацию</button>
+              <button class="btn btn-default" data-toggle="modal" data-target="#form-modal">Получить консультацию</button>
             </div>
           </section>
         </div>
@@ -214,12 +214,12 @@
               </div>
             </div>
             <div class="tariff__actions">
-              <button class="btn btn-default ">Получить консультацию</button>
+              <button class="btn btn-default" data-toggle="modal" data-target="#form-modal">Получить консультацию</button>
             </div>
           </section>
         </div>
       </div>
-      <p class="small  text-muted  tariffs__msg">*  Точную стоимость тарифа можно узнать запросив консультацию</p>
+      <p class="small  text-muted  tariffs__msg">*  Точную стоимость тарифа для вашей компании можно узнать запросив консультацию</p>
     </div>
   </section>
 
@@ -289,7 +289,7 @@
         </article>
       </div>
       <div class="reviews__partners">
-        <h2 class="reviews__partners-title">Наша цель - крепкие долгосрочные отношения, <br class="visible-md-inline">это подтвердят более 100 компаний:</h2>
+        <h2 class="reviews__partners-title">Наша цель — крепкие долгосрочные отношения, <br class="visible-md-inline">это подтвердят более 100&nbsp;компаний:</h2>
         <p class="text-center"><img src="img/logotypes.png" height="264" width="667" alt=""></p>
       </div>
     </div>
@@ -297,7 +297,7 @@
 
   <section class="try">
     <div class="try__inner  container">
-      <h2 class="try__title">Попробуйте нас в деле <img src="img/christmas.svg" width="33" alt=""> <span class="try__free">бесплатно</span></h2>
+      <h2 class="try__title">Попробуйте нас в деле <span class="text-nowrap"><img src="img/christmas.svg" width="33" alt=""> <span class="try__free">бесплатно</span>!</span></h2>
       <h3 class="try__subtitle">Закажите аудит вашего оборудования и расчет рисков:</h3>
       <div class="try__row  row">
         <div class="col-xs-12 col-sm-6">
@@ -307,7 +307,7 @@
             <div class="try__call-descr">
               Мы всегда под рукой
               <b class="try__time">
-                с&nbsp;9:00 до&nbsp;21:00
+                с&nbsp;9:00&nbsp;до&nbsp;21:00
               </b>
               без&nbsp;выходных
             </div>
@@ -322,7 +322,7 @@
                 <input type="text" class="form-control" placeholder="Введите имя">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Введите телефон">
+                <input type="tel" class="form-control" placeholder="Введите телефон">
               </div>
               <button type="submit" class="btn  btn-danger  btn-block">Отправить заявку</button>
             </form>
@@ -337,6 +337,47 @@
       <p class="page-footer__copyright">© 2016, IT-SPARK</p>
     </div>
   </footer>
+
+  <a href="#" id="toTop" class="to-top"></a>
+
+  <div class="modal  modal-form" id="form-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title  modal-form-title">Мы с&nbsp;радостью поработаем с&nbsp;вами</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-descr">Оставьте ваши контакты и наш директор свяжется с вами через 5 минут <b><span class="text-nowrap">+&nbsp;<img src="img/christmas.svg" width="16" alt=""> мы подарим</span> вам бесплатный аудит оборудования</b>!</p>
+          <form class="action-form">
+            <div class="form-group">
+              <label for="modal-form-name">Введите имя</label>
+              <input type="text" id="modal-form-name" class="form-control" placeholder="">
+            </div>
+            <div class="form-group  has-error">
+              <label for="modal-form-email">Введите e-mail</label>
+              <input type="email" id="modal-form-email" class="form-control" placeholder="">
+            </div>
+            <button class="btn  btn-danger  btn-block  modal-form-send-btn" data-dismiss="modal" data-toggle="modal" data-target="#sucess-modal">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal  modal-success" id="sucess-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title  modal-title-duccess">Заявка отправлена</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-descr">Какой то текст еще не придумала, о том что мы бежим к телефону и набираем ваш телефон вот вот ваш телефон зазвенит</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <script src="js/jquery.js"></script>
 <script src="js/script.min.js"></script>
