@@ -5,23 +5,50 @@
 
 .contacts {
   display: block;
-  margin-bottom: 10px;
-  text-align: left;
+  // margin-bottom: 10px;
+  text-align: right;
+  padding-top: 3px;
+
+  @media (min-width: @screen-xs) {
+    padding-top: 13px;
+  }
 
   @media (min-width: @screen-sm) {
-    text-align: right;
+    padding-top: 0;
+  }
+
+  @media (min-width: @screen-md) {
+    padding-top: 16px !important;
   }
 
   &__phone {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     background: url(../img/icon-phone-3.svg) 0 50% no-repeat;
-    background-size: 17px 17px;
-    padding-left: 25px;
+    background-size: 12px 12px;
+    padding-left: 20px;
+    color: @brand-info;
+
+    @media (min-width: @screen-xs) {
+      font-size: 20px;
+      background-size: 17px 17px;
+      padding-left: 25px;
+    }
 
     &:hover, &:focus {
       color: @text-color;
       text-decoration: none;
+    }
+  }
+
+  &__time {
+    display: block;
+    padding-top: 3px;
+    font-size: 8px;
+
+    @media (min-width: @screen-xs) {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }

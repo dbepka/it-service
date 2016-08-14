@@ -1,0 +1,111 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/try/try.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.try {
+  padding: 110px 0 0;
+  border: 1px solid #E1E8ED;
+
+  &__title {
+    color: #333;
+    font-weight: 500;
+    margin: 0 0 8px;
+    text-align: center;
+
+    @media (min-width: @screen-md) {
+      font-size: 32px;
+    }
+
+    img {
+      vertical-align: -2px;
+    }
+  }
+
+  &__free {
+    text-decoration: underline;
+  }
+
+  &__subtitle {
+    color: #555;
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  &__row {
+    position: relative;
+    padding-top: 72px;
+    text-align: center;
+  }
+
+  &__or {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media (min-width: @screen-md) {
+      display: block;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 72px;
+      bottom: 108px;
+      left: 50%;
+      margin-left: -1px;
+      width: 2px;
+      background-color: #E6E6E6;
+    }
+
+    span {
+      position: absolute;
+      top: 41%;
+      background-color: #fff;
+      line-height: 51px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__h3 {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 22px;
+  }
+
+  &__call-me {
+    padding-top: 140px;
+    padding-bottom: 108px;
+    position: relative;
+    background: url(../img/phone.svg) 50% 0 no-repeat;
+    max-width: 360px;
+    margin: auto;
+  }
+
+  &__mail-me {
+    padding-top: 140px;
+    padding-bottom: 108px;
+    position: relative;
+    background: url(../img/airplan.svg) 50% 0 no-repeat;
+    max-width: 290px;
+    margin: auto;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  &__call-descr {
+    display: block;
+    font-size: 20px;
+  }
+}

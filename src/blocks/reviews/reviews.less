@@ -4,24 +4,29 @@
 
 
 .reviews {
-  padding: 0 0 128px; // 95
+  padding: 100px 0 108px;
+  border-top: 1px solid #E6E6E6;
 
   &__title {
     .h1();
     margin: 0 0 51px;
+    font-weight: 500;
+    color: @gray-dark;
   }
 
   &__partners-title {
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     font-size: 26px;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 60px;
+    color: #333;
   }
 
   &__gallery {
     position: relative;
+    padding-bottom: 40px;
 
     &:before {
       content: '';
@@ -64,30 +69,37 @@
     }
 
     .owl-nav {
-      display: none;
+      // display: none;
 
-      @media (min-width: @screen-sm) {
-        display: block;
-      }
+      // @media (min-width: @screen-sm) {
+      //   display: block;
+      // }
 
       .owl-prev {
         font-size: 0;
         color: transparent;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 0;
         width: 20px;
         height: 20px;
-        transform: translateY(-50%) translateX(-198px) rotate(135deg);
-        border-right: 3px solid @gray-light;
-        border-bottom: 3px solid @gray-light;
+        transform: translateY(e("calc(-50% - 20px)")) translateX(-10px) rotate(135deg);
+        border-right: 3px solid #AAAAAA;
+        border-bottom: 3px solid #AAAAAA;
+
+        @media (min-width: @screen-sm) {
+          left: 50%;
+          width: 20px;
+          height: 20px;
+          transform: translateY(e("calc(-50% - 20px)")) translateX(-198px) rotate(135deg);
+        }
 
         @media (min-width: @screen-md) {
-          transform: translateY(-50%) translateX(-255px) rotate(135deg);
+          transform: translateY(e("calc(-50% - 20px)")) translateX(-255px) rotate(135deg);
         }
 
         @media (min-width: @screen-lg) {
-          transform: translateY(-50%) translateX(-303px) rotate(135deg);
+          transform: translateY(e("calc(-50% - 20px)")) translateX(-303px) rotate(135deg);
         }
       }
 
@@ -96,20 +108,50 @@
         color: transparent;
         position: absolute;
         top: 50%;
-        right: 50%;
+        right: 0;
         width: 20px;
         height: 20px;
-        transform: translateY(-50%) translateX(198px) rotate(-45deg);
-        border-right: 3px solid @gray-light;
-        border-bottom: 3px solid @gray-light;
+        transform: translateY(e("calc(-50% - 20px)")) translateX(10px) rotate(-45deg);
+        border-right: 3px solid #AAAAAA;
+        border-bottom: 3px solid #AAAAAA;
+
+        @media (min-width: @screen-sm) {
+          right: 50%;
+          width: 20px;
+          height: 20px;
+          transform: translateY(e("calc(-50% - 20px)")) translateX(198px) rotate(-45deg);
+        }
 
         @media (min-width: @screen-md) {
-          transform: translateY(-50%) translateX(255px) rotate(-45deg);
+          transform: translateY(e("calc(-50% - 20px)")) translateX(255px) rotate(-45deg);
         }
 
         @media (min-width: @screen-lg) {
-          transform: translateY(-50%) translateX(303px) rotate(-45deg);
+          transform: translateY(e("calc(-50% - 20px)")) translateX(303px) rotate(-45deg);
         }
+      }
+    }
+
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .owl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background-color: #999999;
+      margin: 10px;
+
+      &.active {
+        background-color: #fff;
+        border-color: @brand-info;
       }
     }
   }

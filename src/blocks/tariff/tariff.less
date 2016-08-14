@@ -7,6 +7,14 @@
   position: relative;
   margin-top: 20px;
   margin-bottom: 55px;
+  font-weight: 500;
+
+  &:hover .tariff__actions {
+    .btn-default {
+      background-color: @brand-danger;
+      color: #fff;
+    }
+  }
 
   &__text {
     padding-bottom: 10px;
@@ -23,7 +31,7 @@
     }
 
     @media (min-width: @screen-sm) {
-      min-height: 348px;
+      min-height: 290px;
     }
   }
 
@@ -31,12 +39,15 @@
     margin: 0 0 15px;
     font-size: 26px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
+    color: @gray-dark;
 
     small {
       display: block;
       font-size: 1em;
       color: inherit;
+      font-weight: 500;
+      color: @gray-dark;
     }
   }
 
@@ -48,6 +59,22 @@
       margin: 0;
       font-weight: 700;
     }
+
+    small {
+      font-size: 14px;
+    }
+
+    &--info {
+      color: @brand-info;
+    }
+
+    &--warning {
+      color: @brand-warning;
+    }
+
+    &--success {
+      color: @brand-success;
+    }
   }
 
   &__descr {
@@ -55,6 +82,10 @@
 
     p {
       margin: 0 0 5px;
+    }
+
+    ul {
+      margin-bottom: 0;
     }
   }
 
@@ -99,8 +130,7 @@
       left: -15px;
       right: -15px;
       height: 193px;
-      background-color: @gray-lighter;
-      border-bottom: 1px solid #ddd;
+      background-color: #d4ebf4;
 
       @media (min-width: @screen-sm) {
         display: none;
@@ -152,9 +182,7 @@
       left: -15px;
       right: -15px;
       height: 261px;
-      background-color: @gray-lighter;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      background-color: #d4ebf4;
 
       @media (min-width: @screen-sm) {
         display: none;
@@ -210,9 +238,7 @@
       left: -15px;
       right: -15px;
       height: 204px;
-      background-color: @gray-lighter;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      background-color: #d4ebf4;
 
       @media (min-width: @screen-sm) {
         display: none;
