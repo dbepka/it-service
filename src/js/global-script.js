@@ -8,6 +8,7 @@ $( document ).ready(function() {
     loop: true,
     margin: 55,
     nav: true,
+    autoplay: true,
     // autoHeight: true,
     responsive: {
       768: {
