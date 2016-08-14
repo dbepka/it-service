@@ -39,4 +39,26 @@ $( document ).ready(function() {
     }
   });
 
+  // Якорные ссылки страниц (правка из-за хедера)
+  $('a[href^="#"]:not([data-toggle])').on('click', function(e){
+    if( $(this).attr('href').length > 1) {
+      e.preventDefault();
+      var targetPosition = $(this.hash).offset().top;
+      var headerHeight = $('.page-nav').outerHeight();
+      $('body,html').animate({'scrollTop':targetPosition - headerHeight},250);
+    }
+  });
+
+  // Промотка вверх (взято из шаблона)
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 500) {
+      $('#toTop').show();
+    } else {
+      $('#toTop').hide();
+    }
+  });
+  $('#toTop').on("click",function() {
+    $('body,html').animate({scrollTop:0},500);
+  });
+
 });

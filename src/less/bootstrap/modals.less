@@ -38,26 +38,25 @@
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
+  // display: flex !important;
+  // align-items: center;
 }
 
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: relative;
-  width: auto;
-  margin: 10px;
+  width: 100%;
+  // margin: 10px;
+  background-color: #ff0;
 }
 
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
-  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid @modal-content-border-color;
-  border-radius: @border-radius-large;
-  .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
-  // Remove focus outline from opened modal
   outline: 0;
+  width: 100%;
 }
 
 // Modal background
@@ -78,7 +77,8 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: @modal-title-padding;
-  border-bottom: 1px solid @modal-header-border-color;
+  // padding-bottom: 0;
+  // border-bottom: 1px solid @modal-header-border-color;
   &:extend(.clearfix all);
 }
 // Close icon
@@ -90,6 +90,13 @@
 .modal-title {
   margin: 0;
   line-height: @modal-title-line-height;
+  font-size: 22px;
+
+  @media (min-width: @screen-xs) {
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 20px;
+  }
 }
 
 // Modal body
@@ -102,8 +109,8 @@
 // Footer (for actions)
 .modal-footer {
   padding: @modal-inner-padding;
-  text-align: right; // right align buttons
-  border-top: 1px solid @modal-footer-border-color;
+  // text-align: right; // right align buttons
+  // border-top: 1px solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
@@ -130,6 +137,42 @@
   overflow: scroll;
 }
 
+.modal-descr {
+  margin-bottom: 25px;
+
+  @media (min-width: @screen-xs) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.modal-form-send-btn {
+  margin-top: 30px;
+}
+
+.modal-form-title {
+
+  @media (min-width: @screen-xs) {
+    background: url(../img/hands.svg) 0 0 no-repeat;
+    min-height: 99px;
+    padding-left: 94px;
+  }
+}
+
+.modal-success {
+  text-align: center;
+}
+
+.modal-title-duccess {
+
+  @media (min-width: @screen-xs) {
+    font-size: 36px;
+    line-height: 42px;
+    background: url(../img/balloons.svg) 50% 0 no-repeat;
+    padding-top: 146px;
+  }
+}
+
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports
@@ -138,7 +181,7 @@
     margin: 30px auto;
   }
   .modal-content {
-    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+    // .box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
 
   // Modal sizes
@@ -147,4 +190,8 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+@media (min-width: @screen-xs) {
+  .modal-sm { width: @modal-sm; margin: 30px auto; }
 }

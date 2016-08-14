@@ -4,7 +4,7 @@
 
 
 .try {
-  padding: 110px 0 0;
+  padding: 80px 0 0;
   border: 1px solid #E1E8ED;
 
   &__title {
@@ -48,7 +48,7 @@
     left: 50%;
     transform: translate(-50%, 0);
 
-    @media (min-width: @screen-md) {
+    @media (min-width: @screen-sm) {
       display: block;
     }
 
@@ -81,11 +81,15 @@
 
   &__call-me {
     padding-top: 140px;
-    padding-bottom: 108px;
+    padding-bottom: 75px;
     position: relative;
     background: url(../img/phone.svg) 50% 0 no-repeat;
     max-width: 360px;
     margin: auto;
+
+    .try__h3 {
+      margin-bottom: 14px;
+    }
   }
 
   &__mail-me {
@@ -95,6 +99,14 @@
     background: url(../img/airplan.svg) 50% 0 no-repeat;
     max-width: 290px;
     margin: auto;
+
+    @media (min-width: @screen-sm) {
+      max-width: 270px;
+    }
+
+    @media (min-width: @screen-md) {
+      max-width: 290px;
+    }
   }
 
   &__phone {
@@ -102,6 +114,18 @@
     font-size: 32px;
     display: inline-block;
     margin-bottom: 10px;
+    // padding-left: 0.1em;
+    // padding-right: 0.1em;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      border-bottom: 1px dashed @link-color;
+    }
   }
 
   &__call-descr {

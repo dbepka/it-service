@@ -355,8 +355,8 @@ function getComponentsFiles() {
   //   сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.js'); // добавляем в самое начало
   // }
   // Если хочется иметь сторонние файлы в конкатенируемом JS, добавьте их сюда
-  if(fileExistAndHasContent(dirs.source + '/js/bootstrap_collapse.js')) {
-    сomponentsFilesList.js.unshift(dirs.source + '/js/bootstrap_collapse.js');
+  if(fileExistAndHasContent(dirs.source + '/js/bootstrap_modal.js')) {
+    сomponentsFilesList.js.unshift(dirs.source + '/js/bootstrap_modal.js');
   }
   if(fileExistAndHasContent(dirs.source + '/js/owl.carousel.min.js')) {
     сomponentsFilesList.js.unshift(dirs.source + '/js/owl.carousel.min.js');

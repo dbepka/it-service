@@ -7,10 +7,10 @@
   display: block;
   // margin-bottom: 10px;
   text-align: right;
-  padding-top: 3px;
+  padding-top: 13px;
 
   @media (min-width: @screen-xs) {
-    padding-top: 13px;
+    padding-top: 14px;
   }
 
   @media (min-width: @screen-sm) {
@@ -24,31 +24,32 @@
   &__phone {
     font-size: 15px;
     font-weight: 700;
-    background: url(../img/icon-phone-3.svg) 0 50% no-repeat;
     background-size: 12px 12px;
     padding-left: 20px;
     color: @brand-info;
 
     @media (min-width: @screen-xs) {
+      background: url(../img/icon-phone-3.svg) 0 50% no-repeat;
       font-size: 20px;
       background-size: 17px 17px;
       padding-left: 25px;
     }
 
     &:hover, &:focus {
-      color: @text-color;
+      // color: @text-color;
       text-decoration: none;
     }
   }
 
   &__time {
-    display: block;
+    display: none;
     padding-top: 3px;
     font-size: 8px;
 
     @media (min-width: @screen-xs) {
       font-size: 12px;
       line-height: 14px;
+      display: block;
     }
   }
 }
