@@ -47,7 +47,8 @@
   position: relative;
   width: 100%;
   // margin: 10px;
-  background-color: #ff0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 // Actual modal
@@ -77,25 +78,32 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: @modal-title-padding;
-  // padding-bottom: 0;
+  padding-bottom: 0;
   // border-bottom: 1px solid @modal-header-border-color;
   &:extend(.clearfix all);
+
+  @media (min-width: @screen-xs) {
+    padding-bottom: 5px;
+  }
 }
 // Close icon
 .modal-header .close {
-  margin-top: -2px;
+  margin-top: -20px;
+  margin-right: -10px;
 }
 
 // Title text within header
 .modal-title {
   margin: 0;
-  line-height: @modal-title-line-height;
+  line-height: 1.2;
   font-size: 22px;
+  font-weight: 400;
 
   @media (min-width: @screen-xs) {
     font-size: 32px;
     line-height: 38px;
     padding-top: 20px;
+    line-height: @modal-title-line-height;
   }
 }
 
@@ -140,9 +148,20 @@
 .modal-descr {
   margin-bottom: 25px;
 
+  img {
+    vertical-align: -.12em;
+  }
+
   @media (min-width: @screen-xs) {
     font-size: 18px;
     line-height: 26px;
+  }
+}
+
+.modal-form {
+
+  .modal-header {
+    padding-top: 30px;
   }
 }
 
@@ -151,11 +170,15 @@
 }
 
 .modal-form-title {
+  background: url(../img/hands.svg) 0 0 no-repeat;
+  background-size: 46px auto;
+  padding-left: 61px;
 
   @media (min-width: @screen-xs) {
-    background: url(../img/hands.svg) 0 0 no-repeat;
     min-height: 99px;
     padding-left: 94px;
+    background: url(../img/hands.svg) 0 20px no-repeat;
+    background-size: auto;
   }
 }
 

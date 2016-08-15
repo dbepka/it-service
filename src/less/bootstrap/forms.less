@@ -33,7 +33,7 @@ label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 
@@ -433,6 +433,10 @@ input[type="checkbox"] {
 }
 .has-error {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+
+  label {
+    color: @state-danger-text;
+  }
 }
 
 // Reposition feedback icon if input has visible label above

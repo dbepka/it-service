@@ -9,6 +9,7 @@ $( document ).ready(function() {
     margin: 55,
     nav: true,
     autoplay: true,
+    autoplayTimeout: 10000,
     // autoHeight: true,
     responsive: {
       768: {
