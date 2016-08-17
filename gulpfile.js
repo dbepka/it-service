@@ -81,7 +81,7 @@ gulp.task('less', function () {
     .pipe(gulpIf(!isDev, cleanss()))
     .pipe(rename('style.min.css'))
     .pipe(debug({title: "RENAME:"}))
-    .pipe(gulpIf(isDev, sourcemaps.write()))
+    .pipe(gulpIf(isDev, sourcemaps.write('/')))
     .pipe(size({
       title: 'Размер',
       showFiles: true,

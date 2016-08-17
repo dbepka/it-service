@@ -278,4 +278,11 @@
       padding-top: 320px !important;
     }
   }
+
+  .btn-default {
+
+    @media (max-width: (@screen-sm - 1)) {
+      .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+    }
+  }
 }
